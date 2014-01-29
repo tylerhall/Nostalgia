@@ -7,6 +7,7 @@
 //
 
 #import "SFMainWindowController.h"
+#import "SFConstants.h"
 #import "SFPhotoDater.h"
 
 @interface SFMainWindowController ()
@@ -18,8 +19,17 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
+
     [self.window registerForDraggedTypes:@[ NSFilenamesPboardType ]];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange:) name:NSControlTextDidChangeNotification object:nil];
+
+    [self textDidChange:nil];
 }
+
+#pragma mark -
+#pragma mark - Drag and Drop
+#pragma mark -
 
 - (NSDragOperation)draggingEntered:(id <NSDraggingInfo>)sender
 {
@@ -62,6 +72,20 @@
     }
 
     return YES;
+}
+
+#pragma mark -
+#pragma mark - NSTextFieldDelegate
+#pragma mark -
+
+- (void)textDidChange:(NSNotification *)notification
+{
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:[self.txtDateFormat stringValue]];
+    [self.txtDatePreview setStringValue:[df stringFromDate:[NSDate date]]];
+    
+    [[NSUserDefaults standardUserDefaults] setValue:[self.txtDateFormat stringValue] forKey:SFUserDefaultsOutputDateFormat];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end

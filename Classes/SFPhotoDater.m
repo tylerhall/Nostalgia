@@ -7,6 +7,7 @@
 //
 
 #import "SFPhotoDater.h"
+#import "SFConstants.h"
 
 @interface SFPhotoDater ()
 
@@ -26,7 +27,7 @@
         [self.exifDateFormatter setDateFormat:@"yyyy:MM:dd HH:mm:ss"];
 
         self.outDateFormatter = [[NSDateFormatter alloc] init];
-        [self.outDateFormatter setDateFormat:@"yyyy-MM-dd HH.mm.ss"];
+        [self.outDateFormatter setDateFormat:[[NSUserDefaults standardUserDefaults] valueForKey:SFUserDefaultsOutputDateFormat]];
         [self.outDateFormatter setLocale:[NSLocale currentLocale]];
     }
 

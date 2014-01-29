@@ -10,6 +10,7 @@
 		C679F0211872766600F1DE64 /* SFPhotoDater.m in Sources */ = {isa = PBXBuildFile; fileRef = C679F0201872766600F1DE64 /* SFPhotoDater.m */; };
 		C679F02318727CE700F1DE64 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C679F02218727CE700F1DE64 /* MainWindow.xib */; };
 		C679F02618727D1900F1DE64 /* SFMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C679F02518727D1900F1DE64 /* SFMainWindowController.m */; };
+		C6DE6D8518995A60006ACF58 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6DE6D8418995A60006ACF58 /* Defaults.plist */; };
 		C6F6BAC8183D582E00285048 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F6BAC7183D582E00285048 /* Cocoa.framework */; };
 		C6F6BAE7183D582E00285048 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F6BAE6183D582E00285048 /* XCTest.framework */; };
 		C6F6BAE8183D582E00285048 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F6BAC7183D582E00285048 /* Cocoa.framework */; };
@@ -37,6 +38,8 @@
 		C679F02218727CE700F1DE64 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		C679F02418727D1900F1DE64 /* SFMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMainWindowController.h; sourceTree = "<group>"; };
 		C679F02518727D1900F1DE64 /* SFMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMainWindowController.m; sourceTree = "<group>"; };
+		C6DE6D8418995A60006ACF58 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
+		C6DE6D8618995B89006ACF58 /* SFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFConstants.h; sourceTree = "<group>"; };
 		C6F6BAC4183D582E00285048 /* Nostalgia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nostalgia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F6BAC7183D582E00285048 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C6F6BACA183D582E00285048 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -145,6 +148,7 @@
 			children = (
 				C6F6BB14183D594600285048 /* main.m */,
 				C6F6BB15183D594600285048 /* Nostalgia-Prefix.pch */,
+				C6DE6D8618995B89006ACF58 /* SFConstants.h */,
 			);
 			path = "Other Sources";
 			sourceTree = "<group>";
@@ -156,6 +160,7 @@
 				C6F6BB18183D594600285048 /* InfoPlist.strings */,
 				C6F6BB19183D594600285048 /* Nostalgia-Info.plist */,
 				C6F6BB1A183D594600285048 /* XIBs */,
+				C6DE6D8418995A60006ACF58 /* Defaults.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			files = (
 				C679F02318727CE700F1DE64 /* MainWindow.xib in Resources */,
 				C6F6BB1F183D594600285048 /* Credits.rtf in Resources */,
+				C6DE6D8518995A60006ACF58 /* Defaults.plist in Resources */,
 				C6F6BB20183D594600285048 /* InfoPlist.strings in Resources */,
 				C6F6BB22183D594600285048 /* MainMenu.xib in Resources */,
 			);

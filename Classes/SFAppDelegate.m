@@ -19,6 +19,12 @@
 
 @implementation SFAppDelegate
 
+- (void)applicationWillFinishLaunching:(NSNotification *)notification
+{
+    NSDictionary *defaultDefaults = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"]];
+	[[NSUserDefaults standardUserDefaults] registerDefaults:defaultDefaults];
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     self.applicationDidFinishLaunching = YES;

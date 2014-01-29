@@ -10,4 +10,8 @@
 
 @interface SFMainWindowController : NSWindowController
 
+@property (nonatomic, weak) IBOutlet NSTextField *txtDateFormat;
+@property (nonatomic, weak) IBOutlet NSTextField *txtDatePreview;
+@property (nonatomic, weak) IBOutlet NSBox *boxDrop;
+
 @end
