@@ -27,6 +27,11 @@
     [self textDidChange:nil];
 }
 
+- (IBAction)helpWasClicked:(id)sender
+{
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://waracle.net/iphone-nsdateformatter-date-formatting-table/"]];
+}
+
 #pragma mark -
 #pragma mark - Drag and Drop
 #pragma mark -
