@@ -14,3 +14,5 @@ Launch the app, drag and drop a bunch of photos onto the window (or the Dock ico
 Currently, there's no way to customize the output date format. It's set to `yyyy-MM-dd HH.mm.ss`. I make no apologies for that. If you'd like something different, feel free to modify the Xcode project or submit a pull request with the ability to customize the date :) Also, it only looks for the standards based `yyyy:MM:dd HH:mm:ss` EXIF format. If your camera doesn't follow along, Nostalgia won't be able to parse it. Again, pull requests are very much welcome.
 
 You can download Nostalgia for your Mac [from here](https://github.com/tylerhall/Nostalgia/releases). 
+
+![Screenshot](https://raw.githubusercontent.com/tylerhall/Nostalgia/master/screenshot.png)
